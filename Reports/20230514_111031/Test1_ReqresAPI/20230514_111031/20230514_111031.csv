@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test1_ReqresAPI,,,,2023-05-14 11:10:44,2023-05-14 11:10:53,9.234s,PASSED
+,,,,,,,
+Test Cases/Post register Successful,,,,2023-05-14 11:10:45,2023-05-14 11:10:50,4.745s,PASSED
+"response = sendRequest(findTestObject(""Post register Successful""))",,,,2023-05-14 11:10:46,2023-05-14 11:10:50,3.867s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-05-14 11:10:50,2023-05-14 11:10:50,0.078s,PASSED
+"verifyElementPropertyValue(response, ""id"", ""3"")",,,,2023-05-14 11:10:50,2023-05-14 11:10:50,0.141s,PASSED
+,,,,,,,
+Test Cases/Get single user,,,,2023-05-14 11:10:50,2023-05-14 11:10:51,1.003s,PASSED
+"response = sendRequest(findTestObject(""Get single user""))",,,,2023-05-14 11:10:50,2023-05-14 11:10:51,0.301s,PASSED
+assert response.getStatusCode() == 200,,,,2023-05-14 11:10:51,2023-05-14 11:10:51,0.016s,PASSED
+"verifyElementPropertyValue(response, ""data.id"", ""3"")",,,,2023-05-14 11:10:51,2023-05-14 11:10:51,0.043s,PASSED
+"verifyElementPropertyValue(response, ""data.email"", ""emma.wong@reqres.in"")",,,,2023-05-14 11:10:51,2023-05-14 11:10:51,0.041s,PASSED
+"verifyElementPropertyValue(response, ""data.first_name"", ""Emma"")",,,,2023-05-14 11:10:51,2023-05-14 11:10:51,0.052s,PASSED
+"verifyElementPropertyValue(response, ""data.last_name"", ""Wong"")",,,,2023-05-14 11:10:51,2023-05-14 11:10:51,0.055s,PASSED
+,,,,,,,
+Test Cases/Put update,,,,2023-05-14 11:10:51,2023-05-14 11:10:52,1.301s,PASSED
+"response = sendRequest(findTestObject(""Put update""))",,,,2023-05-14 11:10:51,2023-05-14 11:10:52,0.662s,PASSED
+assert response.getStatusCode() == 200,,,,2023-05-14 11:10:52,2023-05-14 11:10:52,0.001s,PASSED
+"verifyElementPropertyValue(response, ""name"", ""Diah"")",,,,2023-05-14 11:10:52,2023-05-14 11:10:52,0.028s,PASSED
+"verifyElementPropertyValue(response, ""job"", ""QA Engineer"")",,,,2023-05-14 11:10:52,2023-05-14 11:10:52,0.034s,PASSED
+,,,,,,,
+Test Cases/Get list users,,,,2023-05-14 11:10:52,2023-05-14 11:10:53,1.239s,PASSED
+"response = sendRequest(findTestObject(""Get list users""))",,,,2023-05-14 11:10:52,2023-05-14 11:10:53,0.810s,PASSED
+assert response.getStatusCode() == 200,,Assert hasil respon status Code expexted result dengan actual result yaitu hasilnya sama 200,,2023-05-14 11:10:53,2023-05-14 11:10:53,0.009s,PASSED
+"verifyElementPropertyValue(response, ""data[0].email"", ""george.bluth@reqres.in"")",,Verifikasi Data respon indeks ke-0 dengan output sama dengan email george.bluth@reqres.in,,2023-05-14 11:10:53,2023-05-14 11:10:53,0.051s,PASSED
+"verifyElementPropertyValue(response, ""data[0].first_name"", ""George"")",,Verifikasi Data respon indeks ke-0 dengan output sama dengan nama Depan George,,2023-05-14 11:10:53,2023-05-14 11:10:53,0.046s,PASSED
+"verifyElementPropertyValue(response, ""data[0].last_name"", ""Bluth"")",,Verifikasi Data respon indeks ke-0 dengan output sama dengan nama Belakang Bluth,,2023-05-14 11:10:53,2023-05-14 11:10:53,0.031s,PASSED

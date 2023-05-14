@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Test1_ReqresAPI" time="9.234" tests="4" failures="0" errors="0">
+   <testsuite name="Test1_ReqresAPI" tests="4" failures="0" errors="0" time="9.234" skipped="0" timestamp="2023-05-14 11:10:44" hostname="researchsynergyfoundation - localhost" id="Test Suites/Test1_ReqresAPI">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/researchsynergyfoundation/Katalon Studio/Reqres API/Reports/20230514_111031/Test1_ReqresAPI/20230514_111031"/>
+         <property name="logFiles" value="/Users/researchsynergyfoundation/Katalon Studio/Reqres API/Reports/20230514_111031/Test1_ReqresAPI/20230514_111031/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="researchsynergyfoundation - localhost"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="8.6.0.208"/>
+      </properties>
+      <testcase name="Test Cases/Post register Successful" time="4.745" classname="Test Cases/Post register Successful" status="PASSED">
+         <system-out><![CDATA[2023-05-14 11:10:45 - [TEST_CASE][PASSED] - Test Cases/Post register Successful: Test Cases/Post register Successful
+
+2023-05-14 11:10:46 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Post register Successful")): Send request successfully
+
+2023-05-14 11:10:49 - [MESSAGE][INFO] - HAR: /Users/researchsynergyfoundation/Katalon Studio/Reqres API/Reports/20230514_111031/Test1_ReqresAPI/20230514_111031/requests/main/0.har
+
+2023-05-14 11:10:50 - [MESSAGE][PASSED] - Send request successfully
+
+2023-05-14 11:10:50 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2023-05-14 11:10:50 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-05-14 11:10:50 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "id", "3"): Verify element property value successfully
+
+2023-05-14 11:10:50 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Get single user" time="1.003" classname="Test Cases/Get single user" status="PASSED">
+         <system-out><![CDATA[2023-05-14 11:10:50 - [TEST_CASE][PASSED] - Test Cases/Get single user: Test Cases/Get single user
+
+2023-05-14 11:10:50 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Get single user")): Send request successfully
+
+2023-05-14 11:10:51 - [MESSAGE][INFO] - HAR: /Users/researchsynergyfoundation/Katalon Studio/Reqres API/Reports/20230514_111031/Test1_ReqresAPI/20230514_111031/requests/main/1.har
+
+2023-05-14 11:10:51 - [MESSAGE][PASSED] - Send request successfully
+
+2023-05-14 11:10:51 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 200: null
+
+2023-05-14 11:10:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.id", "3"): Verify element property value successfully
+
+2023-05-14 11:10:51 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-05-14 11:10:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.email", "emma.wong@reqres.in"): Verify element property value successfully
+
+2023-05-14 11:10:51 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-05-14 11:10:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.first_name", "Emma"): Verify element property value successfully
+
+2023-05-14 11:10:51 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-05-14 11:10:51 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data.last_name", "Wong"): Verify element property value successfully
+
+2023-05-14 11:10:51 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Put update" time="1.301" classname="Test Cases/Put update" status="PASSED">
+         <system-out><![CDATA[2023-05-14 11:10:51 - [TEST_CASE][PASSED] - Test Cases/Put update: Test Cases/Put update
+
+2023-05-14 11:10:51 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Put update")): Send request successfully
+
+2023-05-14 11:10:52 - [MESSAGE][INFO] - HAR: /Users/researchsynergyfoundation/Katalon Studio/Reqres API/Reports/20230514_111031/Test1_ReqresAPI/20230514_111031/requests/main/2.har
+
+2023-05-14 11:10:52 - [MESSAGE][PASSED] - Send request successfully
+
+2023-05-14 11:10:52 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 200: null
+
+2023-05-14 11:10:52 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "name", "Diah"): Verify element property value successfully
+
+2023-05-14 11:10:52 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-05-14 11:10:52 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "job", "QA Engineer"): Verify element property value successfully
+
+2023-05-14 11:10:52 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Get list users" time="1.239" classname="Test Cases/Get list users" status="PASSED">
+         <system-out><![CDATA[2023-05-14 11:10:52 - [TEST_CASE][PASSED] - Test Cases/Get list users: Test Cases/Get list users
+
+2023-05-14 11:10:52 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Get list users")): Send request successfully
+
+2023-05-14 11:10:53 - [MESSAGE][INFO] - HAR: /Users/researchsynergyfoundation/Katalon Studio/Reqres API/Reports/20230514_111031/Test1_ReqresAPI/20230514_111031/requests/main/3.har
+
+2023-05-14 11:10:53 - [MESSAGE][PASSED] - Send request successfully
+
+2023-05-14 11:10:53 - [TEST_STEP][PASSED] - assert response.getStatusCode() == 200: null
+
+2023-05-14 11:10:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].email", "george.bluth@reqres.in"): Verify element property value successfully
+
+2023-05-14 11:10:53 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-05-14 11:10:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].first_name", "George"): Verify element property value successfully
+
+2023-05-14 11:10:53 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-05-14 11:10:53 - [TEST_STEP][PASSED] - verifyElementPropertyValue(response, "data[0].last_name", "Bluth"): Verify element property value successfully
+
+2023-05-14 11:10:53 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-05-14 11:10:44 - [TEST_SUITE][PASSED] - Test1_ReqresAPI: Test Cases/Get list users]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
